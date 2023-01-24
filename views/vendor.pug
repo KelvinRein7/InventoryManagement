@@ -1,0 +1,79 @@
+doctype doctype html
+meta(charset="UTF-8")
+meta(http-equiv="X-UA-Compatible", content="IE=edge")
+meta(name="viewport", content="width=device-width, initial-scale=1.0")
+title #{vendor.name}
+link(rel='stylesheet', href='../css/vendor.css')
+.right-text
+  a.link(href='http://localhost:3000/') Home
+  span.link &nbsp;|&nbsp;
+  a.link(href='http://localhost:3000/vendors') Vendors
+  span.link &nbsp;|&nbsp;
+  a.link(href='http://localhost:3000/addVendor') Add New Vendor 
+
+
+//header-text
+.vendor-info
+  h1(id="vendorName") #{vendor.name}
+  p(id="vendorInfo") Minimum Order: $#{vendor.min_order.toFixed(2)}| Delivery Fee: $#{vendor.delivery_fee.toFixed(2)}
+
+hr
+
+.flex-container
+  //for adding new items and their details into the middle column
+  .new-info
+    h3 New Category:
+    input(type="text" class="new-category" id="category" placeholder="New Category Name")
+    br
+    button(id="AddCategory" class="add-category") Add Category
+    hr
+    br
+    h3 New Item:
+    p Name: 
+    input(type="text", id="itemName" placeholder="New Item Name" class="item-name")
+    p Description:
+    //- textarea(id="description", cols="30", rows="10", class="description-box")
+    textarea(id="description",class="description-box" placeholder="Add Item Description")
+    p Price:
+    input(type="number", id="price", min="0", value='0.00', class="item-price")
+    p Stock:
+    input(type="number", id="stock", min="0", value='0', class="item-stock")
+    p Category:
+    select(id="itemCategory" class="category-dropdown")
+      each category in Object.getOwnPropertyNames(vendor.supplies)
+        option(value=category) #{category}
+
+    br
+    br
+    button(id="addButton" class="add-category") Add Item
+    hr
+
+  //for middle column to display items and their details
+  .vendor-info(id="vendors")
+    each category in Object.getOwnPropertyNames(vendor.supplies)
+      //flex container center category
+      .middle-column
+        h2 #{category}
+      .item-names(id=category)
+        each item in Object.getOwnPropertyNames(vendor.supplies[category])
+          h3 #{vendor.supplies[category][item].name} (ID=#{item}) (STOCK=#{vendor.supplies[category][item].stock})
+          .item-description
+            p #{vendor.supplies[category][item].description} ($ #{parseFloat(vendor.supplies[category][item].price).toFixed(2)})
+
+  //change deli fee/ min order price then save to server
+  //right column
+  .change-info
+    p Name:
+    input(type="text" id="name" value=vendor.name class="vendor-boxes")
+    br
+    p Delivery Fee: 
+    input(type="number" min="0" id="deliFee" value=vendor.delivery_fee.toFixed(2) class="vendor-boxes")
+    br
+    p Minimum Order:
+    input(type="number" min="0" id="minOrder" value=vendor.min_order.toFixed(2) class="vendor-boxes")
+    br
+    p Save Changes:
+    button(id="saveButton" class="add-category") Save
+    hr
+script(src="../js/vendor.js") 
+

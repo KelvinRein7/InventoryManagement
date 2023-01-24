@@ -1,0 +1,80 @@
+body{
+  background-color: rgb(255, 255, 255);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  color:rgb(0, 0, 0);
+}
+
+.middle-display{
+  text-align: right;
+  position: absolute;
+  border-style: groove;
+  border-spacing: 50px;
+  width: 310px;
+  height: 135px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  right: -10px;
+  border-color: rgb(247, 0, 255);
+  border-radius: 10px;
+}
+
+a{
+  font-size: large;
+  color:rgb(0, 0, 0);
+}
+
+.addVendorButton{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 177px;
+  height: 30px;
+  padding: 5px;
+  margin: 1.5px 0;
+  border-radius: 10px; 
+  font-size: small;
+  border-color: rgb(0, 0, 0);
+  /* box-shadow: rgba(0, 0, 0, 0.6) 5px 5px 8px 0px; */
+}
+
+.nameInputBox{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 177px;
+  height: 30px;
+  padding: 5px;
+  margin: 1.5px 0;
+  border-radius: 10px; 
+  font-size: small;
+  border-color: rgb(247, 0, 255);
+  /* box-shadow: rgba(0, 0, 0, 0.6) 5px 5px 8px 0px; */
+}
+
+.deliFeeInputBox{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 177px;
+  height: 30px;
+  padding: 5px;
+  margin: 1.5px 0;
+  border-radius: 10px; 
+  font-size: small;
+  border-color: rgb(247, 0, 255);
+  /* box-shadow: rgba(0, 0, 0, 0.6) 5px 5px 8px 0px; */
+}
+
+.minOrderInputBox{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 177px;
+  height: 30px;
+  padding: 5px;
+  margin: 1.5px 0;
+  border-radius: 10px; 
+  font-size: small;
+  border-color: rgb(247, 0, 255);
+  /* box-shadow: rgba(0, 0, 0, 0.6) 5px 5px 8px 0px; */
+}

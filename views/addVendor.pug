@@ -1,0 +1,25 @@
+doctype doctype html
+meta(charset="UTF-8")
+meta(http-equiv="X-UA-Compatible", content="IE=edge")
+meta(name="viewport", content="width=device-width, initial-scale=1.0")
+title Add New Vendor
+link(rel='stylesheet', href='css/addVendor.css')            
+.right-display
+  a.link(href='http://localhost:3000/') Home
+  span.link &nbsp;|&nbsp;
+  a.link(href='http://localhost:3000/vendors') Vendors
+  span.link &nbsp;|&nbsp;
+  a.link(href='http://localhost:3000/addVendor') Add New Vendor 
+h1 Add New Vendor
+.middle-display
+  span Name:
+  input(type="text" id="name" placeholder='Vendor Name' class="nameInputBox")
+  br
+  span Delivery Fee:
+  input(type="number" id="deliFee" min="0" value='0.00' class="deliFeeInputBox")
+  br
+  span Minimum Order:
+  input(type="number" id="minOrder" min="0" value='0.00' class="minOrderInputBox")
+  br
+  button(class="addVendorButton" onclick="addVendorFunc()") Save Changes
+script(src="js/addVendor.js") 

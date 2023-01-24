@@ -1,0 +1,118 @@
+.flex-container{
+  display: flex;
+  justify-content: space-between;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.middle-column{
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.right-text{
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{
+  font-size: large;
+  color: rgb(0, 0, 0);
+}
+
+.vendor-info{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.new-category{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 177px;
+  height: 30px;
+  padding: 5px;
+  margin: 1.5px 0;
+  border-radius: 10px; 
+  font-size: small;
+  border-color: rgb(247, 0, 255);
+}
+
+.add-category{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 177px;
+  height: 30px;
+  padding: 5px;
+  margin: 1.5px 0;
+  border-radius: 10px; 
+  font-size: small;
+  border-color: rgb(0, 0, 0);
+}
+
+.item-name{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 177px;
+  height: 30px;
+  padding: 5px;
+  margin: 1.5px 0;
+  border-radius: 10px; 
+  font-size: small;
+  border-color: rgb(247, 0, 255);
+}
+
+.item-price{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 177px;
+  height: 30px;
+  padding: 5px;
+  margin: 1.5px 0;
+  border-radius: 10px; 
+  font-size: small;
+  border-color: rgb(247, 0, 255);
+}
+
+.item-stock{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 177px;
+  height: 30px;
+  padding: 5px;
+  margin: 1.5px 0;
+  border-radius: 10px; 
+  font-size: small;
+  border-color: rgb(247, 0, 255);
+
+}
+
+.vendor-boxes{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 177px;
+  height: 30px;
+  padding: 5px;
+  margin: 1.5px 0;
+  border-radius: 10px; 
+  font-size: small;
+  border-color: rgb(247, 0, 255);
+
+}
+
+.category-dropdown{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 177px;
+  height: 30px;
+  padding: 6px;
+  margin: 1.5px 0;
+  border-radius: 10px; 
+  font-size: small;
+  border-color: rgb(247, 0, 255);
+
+}
+
+.description-box{ 
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid rgb(247, 0, 255);
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: small;
+  resize: none;
+
+}

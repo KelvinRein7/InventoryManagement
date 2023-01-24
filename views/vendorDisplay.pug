@@ -1,0 +1,29 @@
+doctype doctype html
+html(lang="en")
+meta(charset="UTF-8")
+meta(http-equiv="X-UA-Compatible", content="IE=edge")
+meta(name="viewport", content="width=device-width, initial-scale=1.0")
+title Vendors
+link(rel='stylesheet', href='css/vendorDisplay.css')
+.right-text
+  a.link(href='http://localhost:3000/') Home
+  span.link &nbsp;|&nbsp;
+  a.link(href='http://localhost:3000/vendors') Vendors
+  span.link &nbsp;|&nbsp;
+  a.link(href='http://localhost:3000/addVendor') Add New Vendor
+.center-text
+  h1 Vendors
+    each val in vendorObj
+      br
+      br
+      a(href="vendors/" + val.id) #{val.name}
+    br
+
+
+//- .center-text
+//-   h1 Vendors
+//-   ul
+//-     each val in vendorObj
+//-       li
+//-         a(href="vendors/" + val.id) #{val.name}
+//-       br
