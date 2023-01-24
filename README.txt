@@ -12,7 +12,9 @@ Steps to run the program:
 
 4. node server.js 
 
-click on the link that appears on the terminal to load the page
+click on the link that appears on the terminal to load the page OR
+
+Go to http://localhost:3000 to load the page
 
 Further Documentation
 ---------------------
