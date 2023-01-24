@@ -1,5 +1,4 @@
 Name: Khun Thu Rein 
-ID: 101186023
 
 Steps to run the program:
 
