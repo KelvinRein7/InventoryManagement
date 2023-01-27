@@ -1,6 +1,7 @@
 //this function will be called when the Save button is clicked
 //Changes will  be made to the server
 //for example: Adding a new vendor information
+// import swal from sweetAlert;
 
 function addVendorFunc(){
   //1.REQUEST HERE
